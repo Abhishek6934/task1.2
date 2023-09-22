@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Methods Example</title>
+</head>
+<body>
+  <script>
+    // String methods
+    const str = 'Hello, world!';
+    document.write('<strong>String methods:</strong><br>');
+    document.write('String length: ' + str.length + '<br>');
+    document.write('Uppercase: ' + str.toUpperCase() + '<br>');
+    document.write('Substring: ' + str.substring(0, 5) + '<br>');
+    document.write('Replace: ' + str.replace('world', 'JavaScript') + '<br>');
+    document.write('Character at index 7: ' + str.charAt(7) + '<br>');
+
+    // Number methods
+    const num = 123.456;
+    document.write('<br><strong>Number methods:</strong><br>');
+    document.write('Fixed to 2 decimals: ' + num.toFixed(2) + '<br>');
+    document.write('Integer part: ' + parseInt(num) + '<br>');
+    document.write('Square root: ' + Math.sqrt(num) + '<br>');
+    document.write('Random number: ' + Math.random() + '<br>');
+    document.write('Absolute value: ' + Math.abs(-5) + '<br>');
+
+    // Array methods
+    const arr = [1, 2, 3, 4, 5];
+    document.write('<br><strong>Array methods:</strong><br>');
+    document.write('Array length: ' + arr.length + '<br>');
+    document.write('Array reversed: ' + arr.reverse() + '<br>');
+    document.write('Array joined: ' + arr.join('-') + '<br>');
+    document.write('Array sorted: ' + arr.sort() + '<br>');
+    document.write('Array sliced: ' + arr.slice(1, 3) + '<br>');
+
+    // Date methods
+    const date = new Date();
+    document.write('<br><strong>Date methods:</strong><br>');
+    document.write('Current date: ' + date + '<br>');
+    document.write('Date string: ' + date.toDateString() + '<br>');
+    document.write('UTC date string: ' + date.toUTCString() + '<br>');
+    document.write('Date month: ' + date.getMonth() + '<br>');
+    document.write('Date day: ' + date.getDay() + '<br>');
+
+    // Function methods
+    document.write('<br><strong>Function methods:</strong><br>');
+
+    function multiply(a, b) {
+      return a * b;
+    }
+    
+    function greet(name) {
+      return `Hello, ${name}!`;
+    }
+
+    document.write('Multiply: ' + multiply(2, 3) + '<br>');
+    document.write('Greeting: ' + greet('Alice') + '<br>');
+  </script>
+</body>
+</html>
